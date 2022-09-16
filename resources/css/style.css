@@ -1,0 +1,17 @@
+/*Global styles*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 15rem;
+    height: auto;
+    border: solid black .2rem;
+    border-radius: .5rem;
+}
