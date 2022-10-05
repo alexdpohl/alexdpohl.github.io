@@ -1,5 +1,8 @@
 /*Global styles*/
 
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
 }
@@ -7,11 +10,84 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.961);
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+h1 {
+    color: rgb(87, 238, 238);
+    text-transform: uppercase;
+    margin-top: 0;
+    text-shadow: 1px 1px white;
 }
 
 img {
     width: 15rem;
     height: auto;
-    border: solid black .2rem;
+    border: solid rgb(219, 219, 219) .1rem;
     border-radius: .5rem;
+}
+
+nav {
+    margin: 2rem 0;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    margin: 3rem 0;
+}
+
+span {
+    margin-left: 1rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.social-container {
+    background-color: white;
+    display: flex;
+    width: 225px;
+    height: 60px;
+    margin: 1rem;
+    border: solid darkgray 1px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px gray;
+}
+
+.social-container:hover {
+    background-color: darkgray;
+}
+
+span:hover {
+    font-weight: bold;
+}
+
+footer {
+    color: white;
+    opacity: .5;
+    font-size: .8rem;
+    margin-top: 3rem;
 }
