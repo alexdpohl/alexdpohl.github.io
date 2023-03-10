@@ -33,10 +33,26 @@ img {
     height: auto;
     border: solid rgb(219, 219, 219) .1rem;
     border-radius: .5rem;
+    position: static;
 }
 
 nav {
     margin: 2rem 0;
+    width: 18rem;
+}
+
+nav a {
+    display: block;
+    margin: 4rem 3rem;
+    font-size: 1.8rem;
+    color: lightgray;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: 600;
 }
 
 .presentation {
@@ -56,6 +72,12 @@ li {
 
 span {
     margin-left: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
 }
 
 .social a {
@@ -78,11 +100,9 @@ span {
 }
 
 .social-container:hover {
-    background-color: darkgray;
-}
-
-span:hover {
+    background-color: lightgray;
     font-weight: bold;
+    transition: .2s;
 }
 
 footer {
