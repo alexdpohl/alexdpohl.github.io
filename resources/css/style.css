@@ -55,6 +55,7 @@ nav a:hover {
     font-weight: 600;
 }
 
+
 .presentation {
     display: flex;
     justify-content: center;
@@ -97,6 +98,7 @@ span {
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px gray;
+    min-width: 15rem;
 }
 
 .social-container:hover {
