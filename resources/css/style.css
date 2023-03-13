@@ -14,18 +14,46 @@ body {
     background-color: rgba(0, 0, 0, 0.961);
 }
 
+h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-shadow: 1px 1px lightgray;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
 h2 {
     font-weight: 200;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     margin-bottom: 0;
     margin-top: 2rem;
 }
 
-h1 {
-    color: rgb(87, 238, 238);
+h3 {
+    font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 0;
-    text-shadow: 1px 1px white;
+    font-weight: 400;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(219, 219, 219);
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgb(219, 219, 219);
+}
+
+.resume-text {
+    max-width: 50rem;
 }
 
 img {
@@ -37,8 +65,8 @@ img {
 }
 
 nav {
-    margin: 2rem 0;
-    width: 18rem;
+    margin: auto;
+    width: 16rem;
 }
 
 nav a {
@@ -57,7 +85,7 @@ nav a:hover {
 
 
 .presentation {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
@@ -107,9 +135,39 @@ span {
     transition: .2s;
 }
 
+.resume-page {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: left;
+    animation: fadeIn 1s;
+}
+
+.resume-page i:hover {
+    color: white;
+}
+
+.resume-page i {
+    color: lightgray;
+    padding: 0.8rem;
+    font-size: 2rem;
+}
+
+.resume-page i:hover {
+    color: white;
+    font-size: 2.2rem;
+    transition: .2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 footer {
     color: white;
     opacity: .5;
     font-size: .8rem;
     margin-top: 3.5rem;
 }
+
