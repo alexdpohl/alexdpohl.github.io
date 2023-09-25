@@ -117,7 +117,16 @@ li {
 
 .competence-list li {
     font-size: 1.5rem;
-    list-style: disc;
+    font-weight: bold;
+    max-width: 45rem;
+    list-style: none;
+    color:rgb(171, 255, 227)
+}
+
+.competence-list p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
 }
 
 span {
