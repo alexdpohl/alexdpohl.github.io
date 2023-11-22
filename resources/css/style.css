@@ -12,6 +12,9 @@ body {
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.961);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -213,6 +216,6 @@ footer {
     color: white;
     opacity: .5;
     font-size: .8rem;
-    margin-top: 3.5rem;
+    margin-top: auto;
 }
 
