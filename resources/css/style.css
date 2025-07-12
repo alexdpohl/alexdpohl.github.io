@@ -555,33 +555,269 @@ footer {
 @media (max-width: 768px) {
     body {
         padding: 1rem;
+        font-size: 16px;
+        line-height: 1.6;
     }
     
+    /* Mobile-optimized theme toggle */
     .theme-toggle {
-        top: 1rem;
-        right: 1rem;
-        width: 40px;
-        height: 40px;
+        top: 1rem !important;
+        right: 1rem !important;
+        width: 50px;
+        height: 50px;
         font-size: 1rem;
+    }
+    
+    .theme-toggle::before {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .theme-toggle .tooltip {
+        right: 60px;
+        font-size: 0.75rem;
+        max-width: 120px;
+    }
+    
+    /* Mobile typography */
+    h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin-bottom: 0.5rem;
+    }
+    
+    h2 {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    h3 {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        margin-bottom: 1rem;
+    }
+    
+    /* Mobile layout adjustments */
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-section {
+        margin-bottom: 2rem;
+        padding: 1rem 0;
     }
     
     .presentation {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
+        margin: 2rem 0;
     }
     
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+    
+    /* Mobile navigation */
     nav {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    nav a {
+        width: 200px;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    /* Mobile social links */
+    .social {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem auto;
+        max-width: 300px;
+    }
+    
+    .social-container {
+        padding: 1.2rem;
+        min-height: 60px;
+    }
+    
+    .social-container a {
+        font-size: 1rem;
+    }
+    
+    .social-container i {
+        font-size: 1.8rem;
+    }
+    
+    /* Mobile resume page */
+    .resume-page {
+        padding: 1.5rem;
+        margin: 1rem 0.5rem;
+        border-radius: 12px;
+    }
+    
+    .back-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .resume-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .resume-container {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Mobile competence list */
+    .competence-list li {
+        padding: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .competence-list li h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .competence-list p {
+        font-size: 0.9rem;
+    }
+    
+    /* Mobile certification links */
+    .certification-list a {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Mobile education list */
+    .education-list li {
+        padding-left: 1.2rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Mobile certification link */
+    .certification-link a {
+        padding: 0.8rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Mobile footer */
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .theme-toggle::before {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .theme-toggle .tooltip {
+        right: 55px;
+        font-size: 0.7rem;
+        max-width: 100px;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    nav a {
+        width: 180px;
+        padding: 0.9rem 1.2rem;
+        font-size: 1rem;
     }
     
     .social {
-        grid-template-columns: 1fr;
+        max-width: 280px;
     }
     
     .resume-page {
-        padding: 2rem 1.5rem;
-        margin: 1rem;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    
+    h1 {
+        font-size: clamp(1.8rem, 10vw, 2.5rem);
+    }
+    
+    h2 {
+        font-size: clamp(1rem, 6vw, 1.3rem);
+    }
+    
+    h3 {
+        font-size: clamp(1.2rem, 6vw, 1.5rem);
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets for mobile */
+    nav a {
+        min-height: 44px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .social-container {
+        min-height: 60px;
+    }
+    
+    .theme-toggle {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .theme-toggle:hover,
+    nav a:hover,
+    .social-container:hover {
+        transform: none;
+    }
+    
+    .theme-toggle:hover::before,
+    nav a:hover::before,
+    .social-container:hover i {
+        transform: none;
+    }
+    
+    /* Active states for touch feedback */
+    .theme-toggle:active {
+        transform: scale(0.95);
+    }
+    
+    nav a:active {
+        transform: scale(0.98);
+    }
+    
+    .social-container:active {
+        transform: scale(0.98);
     }
 }
 
